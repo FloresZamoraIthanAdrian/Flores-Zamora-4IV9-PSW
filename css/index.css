@@ -1,0 +1,149 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+.menu {
+  background-color: rgb(47, 47, 47);
+  font-size: 40px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 28px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(80, 37, 179);
+}
+
+.content {
+  padding: 22px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.content:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(80, 37, 179);
+  transform: scale(1.05, 1.05);
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+}
+
+.datos {
+  margin-top: 45px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 4px;
+  color: white;
+  padding: 32px;
+  font-size: 32px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.datos:hover,
+.photo:hover,
+.contactos:hover {
+  background-color: rgb(51, 51, 51);
+  transform: scale(1.03, 1.03);
+}
+
+.photo {
+  margin-top: 45px;
+  background-color: rgb(47, 47, 47);
+  padding: 100px;
+  display: inline-block;
+  margin-left: 32px;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+
+.contactos {
+  padding: 32px;
+  background-color: rgb(47, 47, 47);
+  display: inline-block;
+  margin-left: 32px;
+  width: 45.1%;
+  transition: 0.3s;
+  color: white;
+  font-size: 32px;
+  border-radius: 4px;
+}
+
+span {
+  font-size: 55px;
+  margin-left: 32px;
+  transition: 0.3s;
+}
+
+.icon-facebook2 {
+  animation-name: facebook;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.icon-facebook2:hover{
+    color: rgb(63, 114, 224);
+    font-size: 60px;
+}
+
+.icon-github:hover{
+    font-size: 60px;
+}
+
+.icon-spotify:hover{
+    font-size: 60px;
+    color: rgb(38, 224, 38);
+}
+
+.icon-instagram:hover{
+    font-size: 60px;
+    color: rgb(204, 0, 255);
+}
+
+.icon-telegram:hover{
+    font-size: 60px;
+    color: aquamarine;
+}
+
+.escolaridad{
+    background-color: rgb(47, 47, 47);
+    border-radius: 4px;
+    margin: 32px;
+    padding: 16px;
+    display: inline-block;
+}
+
+#Escolaridad{
+    display: block;
+}
+
+.text{
+    color: white;
+    font-size: 32px;
+}
+
+.content1{
+    display: inline-block;
+}

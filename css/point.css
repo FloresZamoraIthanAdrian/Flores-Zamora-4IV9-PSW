@@ -1,0 +1,231 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgb(4, 199, 150);
+  border-top: 6px solid rgb(0, 255, 255);
+  border-bottom: 6px solid rgb(0, 255, 255);
+  border-radius: 50%;
+  animation-name: cirOne;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+.header {
+  display: grid;
+  margin: 5%;
+  margin-top: 2%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.line {
+  margin-top: 50px;
+  margin-left: -64px;
+  height: 15px;
+  width: 105%;
+  background-color: rgb(4, 199, 150);
+  animation-name: lines;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes lines {
+  0% {
+    background-color: rgb(4, 199, 150);
+  }
+  16% {
+    background-color: rgb(0, 255, 255);
+  }
+  32% {
+    background-color: rgb(170, 255, 0);
+  }
+  48% {
+    background-color: rgb(255, 0, 255);
+  }
+  64% {
+    background-color: rgb(229, 255, 0);
+  }
+  80% {
+    background-color: rgb(255, 0, 0);
+  }
+  100% {
+  }
+}
+
+.body-left {
+  position: absolute;
+  width: 100px;
+  height: 600px;
+}
+
+.circleLeft {
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgb(4, 199, 150);
+  border-top: 6px solid rgb(0, 255, 255);
+  border-bottom: 6px solid rgb(0, 255, 255);
+  border-radius: 50%;
+  margin-top: -75px;
+  animation-name: cirOne;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+.circleRight {
+  width: 100px;
+  height: 100px;
+  border: 6px solid rgb(4, 199, 150);
+  border-top: 6px solid rgb(0, 255, 255);
+  border-bottom: 6px solid rgb(0, 255, 255);
+  border-radius: 50%;
+  margin-top: -75px;
+  animation-name: cirOne;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+  display: inline-block;
+}
+
+@keyframes cirOne {
+  0% {
+    transform: rotate(0deg);
+    border: 6px solid rgb(4, 199, 150);
+    border-top: 6px solid rgb(0, 255, 255);
+    border-bottom: 6px solid rgb(0, 255, 255);
+  }
+  33% {
+    transform: rotate(360deg);
+    border: 6px solid rgb(4, 199, 150);
+    border-top: 6px solid rgb(0, 255, 255);
+    border-bottom: 6px solid rgb(0, 255, 255);
+  }
+  66% {
+    transform: rotate(0deg);
+    border: 6px solid rgb(229, 255, 0);
+    border-top: 6px solid rgb(255, 0, 0);
+    border-bottom: 6px solid rgb(255, 0, 0);
+  }
+  100% {
+    transform: rotate(360deg);
+    border: 6px solid rgb(255, 0, 255);
+    border-top: 6px solid rgb(170, 255, 0);
+    border-bottom: 6px solid rgb(170, 255, 0);
+  }
+}
+
+.body {
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+  margin: 5%;
+}
+
+.footer {
+  display: grid;
+  margin: 5%;
+  margin-top: -3.8%;
+  display: grid;
+  grid-template-columns: 10% 80% 10%;
+}
+
+.bien {
+  font-size: 75px;
+  animation-name: bienvenida;
+  animation-duration: 15s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  margin-top: -48px;
+  transition: 0.3s;
+}
+
+@keyframes bienvenida {
+    0% {
+      color: rgb(4, 199, 150);
+    }
+    16% {
+      color: rgb(0, 255, 255);
+    }
+    32% {
+      color: rgb(170, 255, 0);
+    }
+    48% {
+      color: rgb(255, 0, 255);
+    }
+    64% {
+      color: rgb(229, 255, 0);
+    }
+    80% {
+      color: rgb(255, 0, 0);
+    }
+    100% {
+    }
+}
+
+.bien:hover{
+    transform: scale(1.05,1.05);
+}
+
+.cn{
+    font-size: 32px;
+}
+
+.text{
+  margin-left: 48px;
+}
+
+.med{
+  display: grid;
+  grid-template-columns: 60% 40%;
+}
+
+.inst{
+  font-size: 45px;
+}
+
+.icon-arrow-right2{
+  margin-left: 150px;
+  font-size: 150px;
+  padding-top: 100px;
+  animation-name: arrow;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  transition: 0.3s;
+}
+
+a:hover{
+  transform: scale(1.1, 1.1);
+}
+
+@keyframes arrow{
+  0% {
+    color: rgb(4, 199, 150);
+  }
+  16% {
+    color: rgb(0, 255, 255);
+  }
+  32% {
+    color: rgb(170, 255, 0);
+  }
+  48% {
+    color: rgb(255, 0, 255);
+  }
+  64% {
+    color: rgb(229, 255, 0);
+  }
+  80% {
+    color: rgb(255, 0, 0);
+  }
+  100% {
+  }
+}

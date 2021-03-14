@@ -1,0 +1,292 @@
+body {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  animation-name: fondo;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes fondo{
+  from{
+    background-color: white;
+  }to{
+    background-color: rgb(47, 47, 47);
+  }
+}
+
+.menu {
+  background-color: rgb(47, 47, 47);
+  font-size: 40px;
+  position: fixed;
+  border-radius: 4px;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  margin-left: 22px;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a:active {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(80, 37, 179);
+}
+
+.content {
+  padding: 22px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.content:hover {
+  color: white;
+  text-decoration: none;
+  background-color: rgb(80, 37, 179);
+  transform: scale(1.05, 1.05);
+}
+
+.datos {
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  border-radius: 4px;
+  margin: 32px;
+}
+
+.part1 {
+  margin: 16px;
+  margin-left: 32px;
+}
+
+.h11{
+  margin-left: 50px;
+  margin-top: 80px;
+  background-color: rgb(47, 47, 47);
+  padding: 16px;
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+}
+
+.h1 {
+  margin-left: 50px;
+  margin-top: 40px;
+  background-color: rgb(47, 47, 47);
+  padding: 16px;
+  display: inline-block;
+  color: white;
+  border-radius: 4px;
+}
+
+.con {
+  padding: 45px;
+  font-size: 35px;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+.cono{
+  padding: 25px;
+  font-size: 35px;
+  background-color: rgb(47, 47, 47);
+  color: white;
+  border-radius: 4px;
+  margin: 16px;
+}
+
+.tm{
+  padding: 50px;
+  margin-left: 120px;
+}
+
+span {
+  font-size: 55px;
+  transition: 0.3s;
+  margin: 16px;
+}
+
+.icon-facebook2 {
+  animation-name: facebook;
+  animation-direction: alternate-reverse;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.icon-facebook2:hover{
+    color: rgb(63, 114, 224);
+    font-size: 60px;
+}
+
+.icon-github:hover{
+    font-size: 60px;
+}
+
+.icon-spotify:hover{
+    font-size: 60px;
+    color: rgb(38, 224, 38);
+}
+
+.icon-instagram:hover{
+    font-size: 60px;
+    color: rgb(204, 0, 255);
+}
+
+.icon-telegram:hover{
+    font-size: 60px;
+    color: aquamarine;
+}
+
+.escolaridad{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin: 32px;
+}
+
+.secundaria, .preparatoria{
+  background-color: rgb(47, 47, 47);
+  border-radius: 4px;
+  margin: 32px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.infos{
+  font-size: 30px;
+  color: white;
+  padding: 32px;
+}
+
+.schs{
+  width: 350px;
+  height: 350px;
+  margin: 32px;
+  margin-left: 0;
+  transition: 0.3s;
+  border-radius: 4px;
+  margin-top: 64px;
+}
+
+.schs:hover{
+  transform: scale(1.03, 1.03);
+  border: 5px solid gray;
+}
+
+.hobbies{
+  margin: 64px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 4px;
+}
+
+.pinguin{
+  /* margin-left: 30%; */
+  margin-bottom: 50px;
+  border-radius: 6px;
+  border: 5px solid gray;
+  margin: 32px;
+  width: 500px;
+  height: 350px;
+}
+
+.mirrage{
+  width: 350px;
+  height: 350px;
+  margin: 32px;
+  border: 5px solid gray;
+}
+
+.dc{
+  width: 350px;
+  height: 350px;
+  margin: 32px;
+  border: 5px solid gray;
+  border-radius: 50%;
+}
+
+.contImg{
+  margin-left: 10%;
+}
+
+.habilidades{
+  margin: 64px;
+  background-color: rgb(47, 47, 47);
+  border-radius: 4px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.lista{
+  font-size: 30px;
+  color: white;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  margin-top: -30px;
+}
+
+.liderazgo{
+  border-radius: 4px;
+  width: 400px;
+  height: 200px;
+  margin: 32px;
+  border: 5px solid gray;
+}
+
+.cronometro{
+  width: 250px;
+  height: 250px;
+  margin: 32px;
+  border: 5px solid gray;
+  border-radius: 50%;
+}
+
+.programacion{
+  border-radius: 4px;
+  margin: 32px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.lenguaje{
+  margin: 32px;
+  background-color: rgb(47, 47, 47);
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.java{
+  width: 300px;
+  height: 300px;
+  margin: 32px;
+}
+
+.electron{
+  width: 150px;
+  height: 150px;
+  margin: 32px;
+}
+
+.nodejs{
+  width: 150px;
+  height: 150px;
+  margin: 32px;
+}
+
+.css{
+  width: 128px;
+  height: 128px;
+  margin: 32px;
+}
