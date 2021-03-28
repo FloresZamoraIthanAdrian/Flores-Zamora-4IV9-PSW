@@ -1,92 +1,105 @@
-body{
-    padding: 0;
-    margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color: rgb(41, 41, 41);
-    color: white;
-    animation-name: backs;
-    animation-duration: 5s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate-reverse;
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: white;
 }
 
-@keyframes backs{
-    from{
-        background-color: rgb(41, 41, 41);
-    }to{
-        background-color: rgb(189, 49, 49);
-    }
+.dropdown {
+  padding: 16px;
 }
 
-.title{
-    font-size: 45px;
-    margin: 32px;
-    color: white;
+.dropbtn {
+  background-color: rgb(187, 50, 50);
+  color: white;
+  border: none;
+  font-size: 45px;
+  border-radius: 4px;
 }
 
-.content{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.killers {
+  border-radius: 4px;
 }
 
-.item{
-    display: inline-flex;
-    margin-left: 32px;
-    width: 30%;
-    justify-content: center;
-    align-items: center;
+.dropdown {
+  position: relative;
 }
 
-.sub{
-    font-size: 70px;
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-.text{
-    font-size: 25px;
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  font-size: 20px;
 }
 
-.histeria{
-    width: 420px;
-    height: 300px;
-    border-radius: 4px;
-    border: 6px solid grey;
+.dropdown-content a:hover {
+  background-color: rgb(235, 172, 172);
 }
 
-.content-sub{
-    width: 100px;
-    margin-right: 35px;
+.dropdown:hover .dropdown-content {
+  display: block;
 }
 
-.caracteristicas{
-    display: inline-flex;
-    margin-left: 32px;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    margin-right: 180px;
+.dropdown:hover .dropbtn {
+  background-color: #c83838;
 }
 
-.sub-3{
-    font-size: 45px;
+.content {
+  margin: 32px;
+  display: flex;
+  background-color: rgb(199, 42, 37);
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
 }
 
-.situaciones{
-    margin: 64px;
-    width: 50%;
+.content-box {
+  justify-content: center;
+  align-items: center;
+  margin: 16px;
 }
 
-.epidemia{
-    width: 400px;
-    height: 600px;
-    margin-left: 150px;
+.sub {
+  font-size: 45px;
+  padding: 32px;
 }
 
-.risa{
-    /* width: 250px;
-    height: 170px; */
-    border-radius: 4px;
-    border: 6px solid grey;
-    margin-left: 30%;
+.text {
+  font-size: 22px;
+  padding: 16px;
 }
+
+.subtitle {
+  font-size: 38px;
+  margin-left: 32px;
+}
+
+.big{
+  margin-left: 32px;
+  font-size: 45px;
+}
+
+.disco{
+  border-radius: 4px;
+  margin: 32px;
+  margin-top: -10px;
+  width: 350px;
+  height: 350px;
+}
+
+.video{
+  border-radius: 4px;
+}
+
 
