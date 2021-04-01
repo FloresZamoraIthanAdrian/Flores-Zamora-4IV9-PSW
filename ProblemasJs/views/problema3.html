@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problemas de JavaScript</title>
+    <link rel="stylesheet" href="../styles/css/main.css">
+    <script src="../scripts/js/problema3.js"></script>
+    <link rel="stylesheet" href="../styles/css/problema2.css">
+</head>
+
+<body>
+
+    <div class="menu">
+        <ul>
+            <a href="../index.html">
+                <li>Problema 1</li>
+            </a>
+            <a href="../views/problema2.html">
+                <li>Problema 2</li>
+            </a>
+            <a href="./problema3.html">
+                <li>Problema 3</li>
+            </a>
+            <a href="./problema4.html">
+                <li>Problema 4</li>
+            </a>
+            <a href="./problema5.html">
+                <li>Problema 5</li>
+            </a>
+            <a href="./problema6.html">
+                <li>Problema 6</li>
+            </a>
+            <a href="./problema7.html">
+                <li>Problema 7</li>
+            </a>
+            <a href="./problema8.html">
+                <li>Problema 8</li>
+            </a>
+            <a href="./problema9.html">
+                <li>Problema 9</li>
+            </a>
+            <a href="./problema10.html">
+                <li>Problema 10</li>
+            </a>
+        </ul>
+    </div>
+
+    <div class="container-main">
+
+        <h2>
+            Problemas Secuenciales <br>
+            Problema 3
+        </h2>
+
+        <div class="content-form">
+
+            <form action="" class="formulario">
+
+                <div class="box">
+                    <p class="text-form">Digite el precio del producto: </p>
+                </div>
+
+                <div class="box-input">
+                    <input type="text" placeholder="Precio del producto y presione enter" id="producto"
+                        onkeypress="return validar(event)" class="input-evy">
+                </div>
+
+                <div class="box">
+                    <p class="text-form">Su total por el momento: </p>
+                </div>
+
+                <div class="box-input">
+                    <input type="text" readonly id="calculo" class="input-evy">
+                </div>
+
+                <div class="box">
+                    <input type="button" class="data" id="calcular" onclick="calcularPrecio()"
+                        value="Aplicar 15% de descuento">
+                </div>
+
+                <div class="box-input">
+                    <input type="text" readonly id="final" placeholder="Su total a pagar es de $" class="input-evy">
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
