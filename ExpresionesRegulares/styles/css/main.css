@@ -1,0 +1,84 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.title{
+    display: grid;
+    grid-template-columns: 75% 25%;
+    background-color: rgb(31, 30, 30);
+    color: rgb(235, 213, 17);
+}
+
+h1{
+    font-size: 45px;
+    margin-left: 32px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 35px;
+}
+
+.main{
+    display: flex;
+}
+
+.content{
+    margin: 32px;
+    padding: 16px;
+    width: 32%;
+}
+
+.container{
+    margin: 32px;
+    padding: 16px;
+}
+
+.info{
+    font-size: 25px;
+}
+
+.expresion{
+    background-color: rgb(31, 30, 30);
+    color: rgb(235, 213, 17);
+    border-radius: 4px;
+    font-size: 25px;
+    margin: 16px;
+    padding: 3px;
+    border: 3px solid grey;
+    display: flex;
+}
+
+.codigo, .codigo-2{
+    font-size: 25px;
+    margin-left: 16px;
+    font-family: monospace;
+}
+
+.codigo-2{
+    font-size: 20px;
+    color: rgb(235, 213, 17);
+}
+
+.grid{
+    display: grid;
+    grid-template-rows: 30% 50%;
+}
+
+.tabla{
+    display: grid;
+    grid-template-columns: 25% 75%;
+    grid-template-rows: auto;
+}
+
+.celda{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(31, 30, 30);
+}

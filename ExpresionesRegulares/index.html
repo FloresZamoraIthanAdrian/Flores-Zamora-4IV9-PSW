@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expresiones regulares</title>
+    <link rel="stylesheet" href="./styles/css/main.css">
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Expresiones regulares</h1>
+        <h2>
+            Flores Zamora Ithan Adrian <br>
+            4IV9 - PSW
+        </h2>
+    </div>
+
+    <div class="main">
+
+        <div class="content">
+            <p class="info">
+                Una expresion regular es una secuencia de caracteres que conforma un patrón de búsqueda.
+                En JavaScript las expresiones regulares tambien son objetos. <br>
+                Usan caracteres simples o especiales, tambien se usan en combinacion. <br>
+                Estos tambien usan los metodos de String.
+                <br> <br>
+                Para definir una expresion regular en JavaScript hay dos formas:
+            </p>
+            <div class="expresion">
+                <p class="codigo">1.- let re = /ab+c/;</p>
+            </div>
+            <div class="expresion">
+                <p class="codigo">2.- let re = new RegExp('ab+c');</p>
+            </div>
+            <p class="info">
+                El primer tipo se conoce como expresion literal, es constante y se carga al momento cuando se carga el
+                script.
+                <br> <br>
+                El segundo tipo usa la funcion constructora, que proporciona la ejecucion en el timepo
+                de ejecucion.Se usa cuando se sabe que la expresion cambiara, no se conoce la fuente
+                como la entrada de usuario.
+            </p>
+        </div>
+
+        <div class="grid">
+            <div class="container">
+                <h3>
+                    Patrones Simples
+                </h3>
+                <p class="info">
+                    Se usan cuando se busca una concidencia directa y en el mismo orden,
+                    por ejemplo: /gob/ <br> <br>
+                </p>
+                <div class="expresion">
+                    <p class="codigo-2">
+                        gobierno -- aborigen<br> <br>
+                        En este caso si hay concidencia en 'gob'ierno, pero no en aborigen aunque si contenga los
+                        caracteres
+                        /gob/ no estan en el mismo orden
+                    </p>
+                </div>
+            </div>
+            <div class="container">
+                <h3>
+                    Caracteres Especiales
+                </h3>
+                <div class="tabla">
+
+                    <div class="celda">
+                        <p class="codigo-2">Aserciones</p>
+                    </div>
+                    <div class="celda">
+                        <p class="codigo-2">
+                            Indican el comienzo y el final de líneas y palabras
+                        </p>
+                    </div>
+
+                    <div class="celda">
+                        <p class="codigo-2">Clases de Caracteres</p>
+                    </div>
+                    <div class="celda">
+                        <p class="codigo-2">Distingue entre letras y dígitos.</p>
+                    </div>
+
+                    <div class="celda">
+                        <p class="codigo-2">Grupos y rangos</p>
+                    </div>
+                    <div class="celda">
+                        <p class="codigo-2">Indica grupos y rangos de caracteres de expresión.</p>
+                    </div>
+
+                    <div class="celda">
+                        <p class="codigo-2">Cuantificadores</p>
+                    </div>
+                    <div class="celda">
+                        <p class="codigo-2">Indica el número de caracteres o expresiones que deben coincidir.</p>
+                    </div>
+
+                    <div class="celda">
+                        <p class="codigo-2">Escapes Unicode</p>
+                    </div>
+                    <div class="celda">
+                        <p class="codigo-2">Distingue los caracteres Unicode, por ejemplo,
+                            letras mayúsculas y minúsculas, símbolos matemáticos y de puntuación.</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
