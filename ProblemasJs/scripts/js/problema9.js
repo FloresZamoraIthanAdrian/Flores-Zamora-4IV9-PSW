@@ -26,22 +26,42 @@ function validarS(e) {
 
 }
 
-var horasIn = document.getElementById('horas');
-var sueldoIn = document.getElementById('sueldo');
-
-var totalIn = document.getElementById('total');
-
 function calcularSueldo(){
 
-    var sueldoV = parseFloat(sueldoIn.value);
-    var horasV = parseFloat(horasIn.value);
+    /* Consigue el valor de los inputs */
+    var sueldoV = parseFloat(document.getElementById('horas').value);
+    var horasV = parseFloat(document.getElementById('sueldo').value);
+    /* Saca el sueldo de las horas */
     var normal = sueldoV * horasV;
 
-    if(horas > 40){
+    var horasExtras = 0
+
+    var sueldoD = sueldoV * 2 
+    var sueldoT = sueldoV * 3
+    var sueldo48 = (sueldoD * 8) + normal
+
+    if(horasV > 40){
+
+        horasExtras = horasV - 40
+
+        if(horasExtras > 8){
+
+            document.getElementById('total').value = `El sueldo total es de: ${((horasExtras - 48) * sueldoT) + sueldo48}`
+
+        }else if(horasExtras <= 8){
+
+            console.log(normal)
+            console.log(horasExtras)
+            console.log(sueldoD)
+            console.log(`${horasExtras*sueldoD}`)
+
+            document.getElementById('total').value = `El sueldo total es de: ${(horasExtras * sueldoD) + normal}`
+
+        }
 
     }else{
         
-        totalIn.value = `El sueldo total es de ${normla}`
+        document.getElementById('total').value = `El sueldo total es de: ${normal}`;
 
     }
 

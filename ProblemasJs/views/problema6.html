@@ -47,29 +47,45 @@
     </div>
 
     <div class="container-main">
-        <h2>
-            Problemas Secuenciales <br>
-            Problema 6
-        </h2>
+        <div class="header">
+            <h2>
+                Problemas Secuenciales <br>
+                Problema 6
+            </h2>
+            <h3>Flores Zamora Ithan Adrian <br> 4IV9 PSW</h3>
+        </div>
 
         <div class="content-form">
 
             <form action="" class="formulario">
 
                 <div class="box">
-                    <p class="text-form">Fecha de nacimiento: </p>
+                    <p class="text-form">Año de nacimiento: </p>
                 </div>
-
                 <div class="box-input">
-                    <input type="date" name="fecha" id="fecha" max="31/3/2021" value="2017-06-01" class="input-evy">
+                    <input type="text" id="ano" onkeypress="return validar(event)" class="input-evy">
                 </div>
                 
                 <div class="box">
-                    <input type="button" onclick="calcularEdad()" value="Calcular edad" class="data">
+                    <p class="text-form">Dia de nacimiento: </p>
+                </div>
+                <div class="box-input">
+                    <input type="text" id="dia" onkeypress="return validar(event)" class="input-evy">
+                </div>
+
+                <div class="box">
+                    <p class="text-form">Mes de nacimiento: </p>
+                </div>
+                <div class="box-input">
+                    <input type="text" id="mes" onkeypress="return validar(event)" class="input-evy">
+                </div>
+
+                <div class="box">
+                    <input type="button" onclick="calcularEdad()" value="Tiempo transcurrido de mi nacimiento" class="data">
                 </div>
 
                 <div class="box-input">
-                    <input type="text" readonly class="input-evy">
+                    <input type="text" id="resultado" readonly class="input-evy">
                 </div>
 
             </form>
