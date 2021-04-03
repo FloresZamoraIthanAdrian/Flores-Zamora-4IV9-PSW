@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Problemas de JavaScript</title>
     <link rel="stylesheet" href="./ProblemasJs/styles/css/main.css">
+    <link rel="stylesheet" href="./ProblemasJs/styles/css/problema2.css">
     <script src="./ProblemasJs/scripts/js/problema1.js"></script>
 </head>
 
@@ -14,64 +15,78 @@
 
     <div class="menu">
         <ul>
-            <a href="./ProblemasJs/index.html">
+            <a href="./index.html">
                 <li>Problema 1</li>
             </a>
             <a href="./ProblemasJs/views/problema2.html">
                 <li>Problema 2</li>
             </a>
-            <a href="./ProblemasJs/problema3.html">
+            <a href="./ProblemasJs/views/problema3.html">
                 <li>Problema 3</li>
             </a>
-            <a href="./ProblemasJs/problema4.html">
+            <a href="./ProblemasJs/views/problema4.html">
                 <li>Problema 4</li>
             </a>
-            <a href="./ProblemasJs/problema5.html">
+            <a href="./ProblemasJs/views/problema5.html">
                 <li>Problema 5</li>
             </a>
-            <a href="./ProblemasJs/problema6.html">
+            <a href="./ProblemasJs/views/problema6.html">
                 <li>Problema 6</li>
             </a>
-            <a href="./ProblemasJs/problema7.html">
+            <a href="./ProblemasJs/views/problema7.html">
                 <li>Problema 7</li>
             </a>
-            <a href="./ProblemasJs/problema8.html">
+            <a href="./ProblemasJs/views/problema8.html">
                 <li>Problema 8</li>
             </a>
             <a href="./ProblemasJs/views/problema9.html">
                 <li>Problema 9</li>
             </a>
-            <a href="./ProblemasJs/problema10.html">
+            <a href="./ProblemasJs/views/problema10.html">
                 <li>Problema 10</li>
             </a>
         </ul>
     </div>
 
-    <div class="content">
-        <div class="box">
-            <h2>Problema 1</h2>
-            <div class="content-form">
-                <form action="">
+    <div class="container-main">
+        <div class="header">
+            <h2>
+                Problemas Secuenciales <br>
+                Problema 1
+            </h2>
+            <h3>Flores Zamora Ithan Adrian <br> 4IV9 PSW</h3>
+        </div>
 
-                    <p class="input">Capital a invertir: <input id="invertir" type="text"
-                            onkeypress="return validarn(event)" class="campo">
-                    </p>
+        <div class="content-form">
 
-                    <p class="input">Meses a invertir: <input id="tiempoMeses" type="text" class="campo"
-                            onkeypress="return validarMeses(event)">
-                    </p>
+            <form action="" class="formulario">
 
-                    <div class="content-btn">
-                        <button type="submit" id="submitForm" class="btn-inversion" onclick="Calcular()">Verificar</button>
-                    </div>
+                <div class="box">
+                    <p class="text-form">Capital a invertir: </p>
+                </div>
 
-                    <div class="ver">
-                        <input id="inversionFinal" type="text" value="" placeholder="Aqui podra visualizar su inversion"
-                            class="verInversion" readonly>
-                    </div>
+                <div class="box-input">
+                    <input type="text" onkeypress="return validarn(event)" id="invertir" class="input-evy">
+                </div>
 
-                </form>
-            </div>
+                <div class="box">
+                    <p class="text-form">Meses a invertir: </p>
+                </div>
+
+                <div class="box-input">
+                    <input id="tiempoMeses" type="text" class="input-evy" onkeypress="return validarMeses(event)">
+                </div>
+
+                <div class="box">
+                    <input type="button" value="Verificar" onclick="Calcular()" class="data">
+                </div>
+
+                <div class="box-input">
+                    <input type="text" readonly id="Inversion Final" placeholder="Inversion Final" class="input-evy">
+                </div>
+
+            </form>
+
         </div>
     </div>
 
